@@ -13,7 +13,6 @@ setup(name='musca',
       py_modules=['musca'],
       scripts=['musca.py', 'keycodes.py', 'musca_test.py'],
       classifiers=[
-          'Development Status :: 1 - Alpha',
           'Intended Audience :: End Users/Desktop',
           'License :: OSI Approved :: MIT License',
           'Environment :: Console',
