@@ -5,7 +5,7 @@ import os
 import virtkey
 from keycodes import KEYCODES
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
