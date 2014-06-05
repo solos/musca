@@ -14,4 +14,4 @@ Another way to control musca.
 
 #Demo
 
-   [<img src="http://photo.weibo.com/1643331153/photos/large/photo_id/3716786230025748">](Demo)
+   [<img src="http://ww2.sinaimg.cn/large/61f33e51tw1egz042lcspg20zk0m8jvw.gif">](Demo)
