@@ -19,7 +19,7 @@ class DefaultTestCase(unittest.TestCase):
         pass
 
     def test_version(self):
-        self.assertIsNotNone(musca.__version__, '0.0.1')
+        self.assertIsNotNone(musca.__version__, '0.0.2')
 
 
 def suite():

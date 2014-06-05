@@ -2,15 +2,14 @@
 # -*- coding: utf-8 -*-
 
 from distutils.core import setup
-from musca import __version__
 
 setup(name='musca',
-      version=__version__,
+      version='0.0.2',
       description='Another way to control musca.',
       long_description=open('README.md').read(),
       author='solos',
       author_email='solos@solos.so',
-      py_modules=['musca'],
+      py_modules=['musca', 'keycodes'],
       scripts=['musca.py', 'keycodes.py', 'musca_test.py'],
       classifiers=[
           'Intended Audience :: End Users/Desktop',
