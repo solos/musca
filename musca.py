@@ -9,7 +9,6 @@ __version__ = '0.0.2'
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-v = virtkey.virtkey()
 MAPS = {
     'left': 'h',
     'right': 'l',
@@ -32,24 +31,26 @@ class Musca(object):
             self.Mod1 = 'Alt_L'
             self.Shift = 'Shift_L'
 
+        self.v = virtkey.virtkey()
+
     def enter(self, keys):
         for key in keys:
             if '+' in key:
                 arr = key.split('+')
                 for i in arr:
                     keycode = int(KEYCODES[i], 16)
-                    v.press_keysym(keycode)
+                    self.v.press_keysym(keycode)
                 for i in arr:
                     keycode = int(KEYCODES[i], 16)
-                    v.release_keysym(keycode)
+                    self.v.release_keysym(keycode)
             else:
                 keycode = int(KEYCODES[key], 16)
-                v.press_keysym(keycode)
-                v.release_keysym(keycode)
+                self.v.press_keysym(keycode)
+                self.v.release_keysym(keycode)
 
     def enter_char(self, char):
-        v.press_unicode(ord(char))
-        v.release_unicode(ord(char))
+        self.v.press_unicode(ord(char))
+        self.v.release_unicode(ord(char))
 
     def join(self, keys):
         return '+'.join(keys)
