@@ -64,7 +64,9 @@ class Musca(object):
                 self.focus(i)
         elif isinstance(direction, basestring):
             direc = self.MAPS[direction]
-            self.enter(self.join([self.Mod4 + self.Shift + direc]))
+            self.enter(map(self.join, [
+                [self.Mod4, self.Shift, direc],
+            ]))
         else:
             return
 
