@@ -52,10 +52,11 @@ class MuscaTests(unittest.TestCase):
         self.assertTrue(self.vk.return_value.release_unicode.call_args,
                         call(ord('c')))
 
-    # def test_focus(self):
-    #     from musca import MAPS
-    #     self.musca.MAPS = MAPS
-    #     self.musca.focus(["left"])
+    def test_focus(self):
+        from musca import MAPS
+        self.musca.MAPS = MAPS
+        self.musca.focus(["left"])
+        self.assertTrue(("h", self.musca.Mod4, 'Shift_L'))
 
     def test_split(self):
         self.musca.split()
